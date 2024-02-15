@@ -33,7 +33,7 @@ class Program
         Console.WriteLine("Введите количество чисел Фибоначчи для сгенерации: ");
         int n = Convert.ToInt32(Console.ReadLine());
 
-        Fibonacci<dynamic> fibonacci = new Fibonacci<dynamic>();
+        Fibonacci<dynamic> fibonacci = new Fibonacci<dynamic>();// создаем экземпляр класса через обобщения
         List<dynamic> fibonacciList = fibonacci.GenerateFibonacciList(n);
 
         Console.WriteLine($"Первые {n} чисел Фибоначчи:");
